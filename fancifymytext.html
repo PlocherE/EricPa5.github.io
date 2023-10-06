@@ -1,36 +1,42 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>Fancify Shamcify</title>
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
 
-		<!-- link to your script file here -->
-		<script src="fancifymytext.js"></script>
-		
-	</head>
+    <script>
+      function changeImage() {
+        let displayImage = document.getElementById('image');
+        displayImage.src = "happyPika.jpg";
+        // Credit for this image goes to Pixiv user Higa //
+        // https://www.pixiv.net/en/artworks/90277462    //
+      }
+    </script>
+  </head>
 
-	<body>
-		<h1>Fancify my Text</h1>
-		
+  <body>
 
-		<!-- Your UI controls go here -->
-	<fieldset>
-		<Legend>Text</Legend>
-		<textarea id="Text" name="Text" rows="4" cols="30">
+    <header>
+      <div style = "text-align: center;">
+        <h1>
+          Sad Pikachu
+        </h1>
+      </div>
+    </header>
 
-		</textarea>
-	</fieldset>
-	<fieldset>
-		<legend>Fancify</legend>
-		<button type="button" onclick="fontSizeFunction()">Bigger</button>
-		<input type="radio" id="bold" name="fontChange" onclick="fontBoldFunction()">FancyShmancy</button>
-		<input type="radio" id="normal" name="fontChange" onclick="fontNormalFunction()">BoringBetty</button>
-		<button type="button" onclick="mooFunction()">MOO!</button>
-	</fieldset>
-	</body>
+    <main></main>
+      <div style = "text-align: center;">
+        <a href="index.html" target="_blank">
+          <p><strong>Pikachu did not deserve this.</strong></p>
+        </a>
+        <img src="sadPika.gif" alt="Sad Pikachu gif" class="responsive" id="image">
+        <!-- Cridit for this image go to Pintrest user RAWWW 
+          https://www.pinterest.com/pin/615515474065732746/   -->
+      </div>
+
+      <div style="text-align: center;">
+        <button onclick="changeImage()"> Click here to cheer up Pikachu</button>
+      </div>
+    </main>
+  </body>
 </html>
-
-<!--
-<input type="radio" id="bold" onclick="fontBoldFunction()">FancyShmancy</button>
-		<input type="radio" id="normal" onclick="fontNormalFunction()">BoringBetty</button>
-
--->
